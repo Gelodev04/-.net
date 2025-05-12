@@ -1,10 +1,11 @@
-
+@import url("https://cdn.jsdelivr.net/gh/Nyannnnnng/NEXON-Lv.2-Gothic/stylesheet.css");
 *{
     box-sizing: border-box;
 }
 
 body{
     background-color: #eeeeee;
+     font-family: 'NEXON Lv2 Gothic', sans-serif;
 }
 
 .btn {
@@ -42,7 +43,7 @@ body{
 }
 
 .box {
-    padding-top: -0.75rem;
+    padding-top: 20px;
     padding-bottom: 1.25rem;
     border-radius: 0.75rem;
     background-color: rgb(255 255 255 / 0.9);
@@ -65,5 +66,33 @@ body{
 
 
 }
+
+.grade-badge {
+    display: flex;
+    max-height: 0.875rem;
+    min-height: 0.875rem;
+    min-width: 0.875rem;
+    max-width: 0.875rem;
+    align-items: center;
+    justify-content: center;
+    border-radius: 0.25rem;
+    background-size: contain;
+    font-size: 9px;
+    --tw-text-opacity: 1;
+    color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+.pagination {
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    width: -moz-min-content;
+    width: min-content;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
 
 

@@ -14,7 +14,9 @@
 
   <body>
     <!-- HEADER -->
-    <header class="bg-white fixed w-full top-0 border-b border-gray-200">
+    <header
+      class="bg-white lg:static fixed w-full top-0 border-b border-gray-200"
+    >
       <nav class="h-[70px] lg:h-[100px] relative p-5 lg:px-[3.5rem]">
         <div class="flex items-center h-full">
           <div class="flex items-center justify-between w-full lg:hidden">
@@ -38,11 +40,11 @@
           </div>
           <!-- LOGO -->
           <a href="/">
-              <img
-                src="upload/f005744ffbf444be997bc7624b102c90.webp"
-                alt="놀자넷"
-                class="h-12 lg:w-[300px] lg:h-[71px] object-contain absolute translate-x-1/2 right-1/2 lg:static lg:translate-x-0 lg:right-auto"
-              />
+            <img
+              src="upload/f005744ffbf444be997bc7624b102c90.webp"
+              alt="놀자넷"
+              class="h-12 lg:w-[300px] lg:h-[71px] object-contain absolute translate-x-1/2 right-1/2 lg:static lg:translate-x-0 lg:right-auto translate-y-1/2 bottom-1/2 lg:translate-y-0 lg:bottom-0"
+            />
           </a>
 
           <!-- DESKTOP MENUS -->
@@ -59,7 +61,7 @@
             </li>
             <li class="relative group">
               <a
-                href="/commentWorkRequest"
+                href="/commentWorkRequest.html"
                 class="p-3 flex justify-between font-bold transition group-hover:text-fgAccent-500"
               >
                 커스텀 댓글주문
@@ -67,7 +69,7 @@
             </li>
             <li class="relative group">
               <a
-                href="/posts/자동주문"
+                href="/posts/automaticOrder.html"
                 class="p-3 flex justify-between font-bold transition group-hover:text-fgAccent-500"
               >
                 자동주문신청
@@ -167,30 +169,32 @@
           class="-mx-3 pb-10 border-t border-gray-200 flex flex-col divide-y divide-gray-200 text-[18px]"
         >
           <li>
-            <a href="/workRequest" class="p-3 flex justify-between">
+            <a href="/workRequest.html" class="p-3 flex justify-between">
               주문하기
             </a>
           </li>
           <li>
-            <a href="/commentWorkRequest" class="p-3 flex justify-between">
+            <a href="/commentWorkRequest.html" class="p-3 flex justify-between">
               커스텀 댓글주문
             </a>
           </li>
           <li x>
-            <a href="/posts/자동주문" class="p-3 flex justify-between">
+            <a href="/posts/자동주문.html" class="p-3 flex justify-between">
               자동주문신청
             </a>
           </li>
           <li>
-            <a href="/deposit" class="p-3 flex justify-between"> 포인트충전 </a>
+            <a href="/deposit.html" class="p-3 flex justify-between">
+              포인트충전
+            </a>
           </li>
           <li>
-            <a href="/posts/문의하기" class="p-3 flex justify-between">
+            <a href="/posts/문의하기.html" class="p-3 flex justify-between">
               문의하기
             </a>
           </li>
           <li>
-            <a href="/posts/공지사항" class="p-3 flex justify-between">
+            <a href="/posts/공지사항.html" class="p-3 flex justify-between">
               공지사항
             </a>
           </li>
@@ -223,9 +227,7 @@
     </div>
 
     <!-- CONTENT -->
-    <main
-      class="px-3 mt-[5.5rem] lg:mt-[7.5rem] lg:flex gap-5 w-full justify-center"
-    >
+    <main class="px-3 mt-[5.5rem] lg:mt-5 lg:flex gap-5 w-full justify-center">
       <!-- PROFILE BOX -->
       <section class="w-1/4">
         <div
@@ -303,11 +305,12 @@
 
       <!-- RIGHT SECTION -->
       <section class="lg:w-2/3">
+        <!-- FIRST BOX -->
         <div class="title">
           <h1 class="text-xl font-bold">작업 신청</h1>
         </div>
         <!-- SECOND BOX -->
-        <div class="box mt-5">
+        <div class="box mt-5 p-[20px]">
           <p class="whitespace-pre-wrap text-[18px]">네이버 블로그 공감 / 댓글 / 스크랩 관련 작업을 할 수 있는 솔루션입니다.
 * 연중무휴 24시간 자동 작업이 진행되고 있으며, 고품질의 계정으로, 체류 시간도 같이 진행됩니다.
 공감 40원 / 댓글 40원 / 스크랩 80원(국내 최저가)
@@ -369,7 +372,7 @@ PC / 모바일 주소 상관없이 등록 가능합니다.
                   </th>
                 </tr>
               </thead>
-              <tbody class="divide-y divide-gray-200 bg-white ">
+              <tbody class="divide-y divide-gray-200 bg-white">
                 <tr>
                   <td
                     class="whitespace-nowrap py-2 pl-4 pr-3 text-sm text-gray-500 sm:pl-0"
@@ -872,47 +875,62 @@ PC / 모바일 주소 상관없이 등록 가능합니다.
           </div>
         </div>
         <!-- END OF SECOND BOX -->
-         <div class="box min-h-96 mt-5 text-[18px]">
-        <div class="sm:flex sm:items-center">
+        <div class="box min-h-96 mt-5 text-[18px]">
+          <div class="sm:flex sm:items-center">
             <div class="sm:flex-auto">
-                <h1 class="text-base font-semibold leading-6">작업 내역</h1>
+              <h1 class="text-base font-semibold leading-6">작업 내역</h1>
             </div>
-        </div>
-        <div class="mt-2 px-6 flow-root">
+          </div>
+          <div class="mt-2 px-6 flow-root">
             <div class="-mx-4 -my-2 overflow-x-auto sm:-mx-6 lg:-mx-8">
-                <div class="inline-block min-w-full py-2 align-middle">
-                    <table class="min-w-full divide-y divide-gray-200">
-                        <thead>
-                        <tr>
-                            <th scope="col" class="px-3 py-2 text-left font-semibold">등록시각</th>
-                            <th scope="col" class="px-3 py-2 text-left font-semibold">키워드</th>
-                            <th scope="col" class="px-3 py-2 text-left font-semibold">URL</th>
-                            <th scope="col" class="px-3 py-2 text-left font-semibold">공감</th>
-                            <th scope="col" class="px-3 py-2 text-left font-semibold">댓글</th>
-                            <th scope="col" class="px-3 py-2 text-left font-semibold">스크랩</th>
-                            <th scope="col" class="px-3 py-2 text-left font-semibold">포인트</th>
-                            <th scope="col" class="px-3 py-2 text-left font-semibold">현황</th>
-                        </tr>
-                        </thead>
-                        <tbody class="divide-y divide-gray-200 text-xs">
-                        </tbody>
-                    </table>
-                </div>
+              <div class="inline-block min-w-full py-2 align-middle">
+                <table class="min-w-full divide-y divide-gray-200">
+                  <thead>
+                    <tr>
+                      <th scope="col" class="px-3 py-2 text-left font-semibold">
+                        등록시각
+                      </th>
+                      <th scope="col" class="px-3 py-2 text-left font-semibold">
+                        키워드
+                      </th>
+                      <th scope="col" class="px-3 py-2 text-left font-semibold">
+                        URL
+                      </th>
+                      <th scope="col" class="px-3 py-2 text-left font-semibold">
+                        공감
+                      </th>
+                      <th scope="col" class="px-3 py-2 text-left font-semibold">
+                        댓글
+                      </th>
+                      <th scope="col" class="px-3 py-2 text-left font-semibold">
+                        스크랩
+                      </th>
+                      <th scope="col" class="px-3 py-2 text-left font-semibold">
+                        포인트
+                      </th>
+                      <th scope="col" class="px-3 py-2 text-left font-semibold">
+                        현황
+                      </th>
+                    </tr>
+                  </thead>
+                  <tbody class="divide-y divide-gray-200 text-xs"></tbody>
+                </table>
+              </div>
             </div>
+          </div>
         </div>
-    </div>
       </section>
 
       <!-- IMAGE SECTION -->
-       <section class="mt-10 lg:hidden">
-            <!-- IMAGE SECTION -->
-            <div class=" flex flex-col gap-5">
-                <img src="upload/741949a8baf14a23bd2434bb7a2e2f1d.webp" alt="">
-                <img src="upload/8700d966a5304e66bacc5ff451e0d8fa.webp" alt="">
-                <img src="upload/cf21f0847b2448e5a480b406bb8461aa.webp" alt="">
-                <img src="upload/8f48cad676174090bb1c52cd9c033f4d.webp" alt="">
-            </div>
-        </secton>
+      <section class="mt-10 lg:hidden">
+        <!-- IMAGE SECTION -->
+        <div class="flex flex-col gap-5">
+          <img src="upload/741949a8baf14a23bd2434bb7a2e2f1d.webp" alt="" />
+          <img src="upload/8700d966a5304e66bacc5ff451e0d8fa.webp" alt="" />
+          <img src="upload/cf21f0847b2448e5a480b406bb8461aa.webp" alt="" />
+          <img src="upload/8f48cad676174090bb1c52cd9c033f4d.webp" alt="" />
+        </div>
+      </section>
     </main>
 
     <!-- FOOTER -->

@@ -33,3 +33,84 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   });
 });
+
+// PAGINATION
+ const urlParams = new URLSearchParams(window.location.search);
+  const currentPage = urlParams.get('page') || '1'; // default to 1 if not set
+
+  // Highlight the current page
+  const links = document.querySelectorAll('#pagination a');
+  links.forEach(link => {
+    if (link.dataset.page === currentPage) {
+      link.classList.add('bg-[#c4c4c4]');
+    } else {
+      link.classList.remove('bg-gray-300');
+    }
+  });
+
+// RICH EDITOR
+//  ClassicEditor
+//     .create(document.querySelector('#editor'), {
+//       toolbar: [
+//         'heading',
+//         '|',
+//         'imageUpload', 'mediaEmbed', 'link',
+//         '|',
+//         'bold', 'italic',
+//          'fontfamily', 'fontsize', 'fontColor', 'fontBackgroundColor',
+//         'alignment',
+//         'bulletedList', 'numberedList',
+//         '|',
+//         'blockQuote', 'insertTable',
+//         'undo', 'redo',
+//         'sourceEditing'
+//       ],
+      
+//     })
+//     .catch(error => {
+//       console.error(error);
+//     });
+
+
+const {
+     ClassicEditor,
+    Essentials,
+    Bold,
+    Italic,
+    Font,
+    Paragraph,
+    Heading,
+    ImageUpload,
+    MediaEmbed,
+    Link,
+    Alignment,
+    List,
+    BlockQuote,
+    Table,
+    Undo,
+    Redo,
+    SourceEditing,
+    GeneralHtmlSupport
+} = CKEDITOR;
+
+ClassicEditor
+    .create( document.querySelector( '#editor' ), {
+        licenseKey: '<YOUR_LICENSE_KEY>',
+        plugins: [ Essentials, Bold, Italic, Font, Paragraph, Heading ],
+        toolbar: [
+        'heading',
+        '|',
+        'imageUpload', 'mediaEmbed', 'link',
+        '|',
+        'bold', 'italic',
+         'fontfamily', 'fontsize', 'fontColor', 'fontBackgroundColor',
+        'alignment',
+        'bulletedList', 'numberedList',
+        '|',
+        'blockQuote', 'insertTable',
+        'undo', 'redo',
+        'sourceEditing'
+      ]
+    } )
+    .then( /* ... */ )
+    .catch( /* ... */ );
