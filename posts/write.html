@@ -32,16 +32,7 @@
           <div class="flex items-center justify-between w-full lg:hidden">
             <!-- MENUICON -->
             <button id="toggleButton">
-              <svg
-                class="size-[30px] z-[10]"
-                xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 448 512"
-              >
-                <path
-                  fill="#888888"
-                  d="M0 96C0 78.33 14.33 64 32 64H416C433.7 64 448 78.33 448 96C448 113.7 433.7 128 416 128H32C14.33 128 0 113.7 0 96zM0 256C0 238.3 14.33 224 32 224H416C433.7 224 448 238.3 448 256C448 273.7 433.7 288 416 288H32C14.33 288 0 273.7 0 256zM416 448H32C14.33 448 0 433.7 0 416C0 398.3 14.33 384 32 384H416C433.7 384 448 398.3 448 416C448 433.7 433.7 448 416 448z"
-                ></path>
-              </svg>
+              <i class="bi bi-list text-2xl"></i>
             </button>
             <!-- SEARCH ICON -->
             <button id="searchButton" class="cursor-pointer">
@@ -153,16 +144,16 @@
         <div
           class="grid grid-cols-2 gap-3 whitespace-nowrap *:border *:rounded *:px-3 *:py-2 *:text-center text-[18px]"
         >
-          <a href="/user/myInfo" class="border-gray-200 border">정보수정</a>
-          <a href="/user/myPoints" class="border-gray-200 border"
+          <a href="/user/myInfo.html" class="border-gray-200 border">정보수정</a>
+          <a href="/user/myPoints.html" class="border-gray-200 border"
             >포인트 100점</a
           >
-          <a href="/user/myPosts" class="border-gray-200 border">
+          <a href="/user/myPosts.html" class="border-gray-200 border">
             게시글 0개
           </a>
-          <a href="/user/myComments" class="border-gray-200 border">댓글 0개</a>
-          <a href="/noteReceived" class="border-gray-200 border">쪽지 0개</a>
-          <a href="/user/myPosts" class="border-gray-200 border">나의 활동</a>
+          <a href="/user/myComments.html" class="border-gray-200 border">댓글 0개</a>
+          <a href="/noteReceived.html" class="border-gray-200 border">쪽지 0개</a>
+          <a href="/user/myPosts.html" class="border-gray-200 border">나의 활동</a>
           <a href="javascript:;" class="border-gray-200 border">
             푸시 알림 OFF
           </a>
@@ -189,7 +180,7 @@
             </a>
           </li>
           <li x>
-            <a href="/posts/자동주문.html" class="p-3 flex justify-between">
+            <a href="/posts/automaticOrder.html" class="p-3 flex justify-between">
               자동주문신청
             </a>
           </li>
@@ -217,7 +208,7 @@
       class="lg:hidden fixed w-full h-24 pb-6 bottom-0 grid grid-cols-3 justify-center items-center border-solid border-t border-gray-200 bg-white"
     >
       <a
-        href="/workRequest"
+        href="/workRequest.html"
         class="flex flex-col px-4 justify-center items-center"
       >
         <i class="bi bi-heart-fill text-xl"></i>
@@ -272,23 +263,23 @@
             </div>
           </div>
           <div class="flex flex-col *:w-fit [&>a:hover]:underline">
-            <a href="/user/myPoints">
+            <a href="/user/myPoints.html">
               <span>포인트</span>
               100점
             </a>
-            <a href="/user/myPosts">
+            <a href="/user/myPosts.html">
               <span>게시글</span>
               0개
             </a>
-            <a href="/user/myComments">
+            <a href="/user/myComments.html">
               <span>댓글 </span>
               0개
             </a>
-            <a href="/noteReceived">
+            <a href="/noteReceived.html">
               <span>쪽지</span>
               0개
             </a>
-            <a href="/mySavedPosts">
+            <a href="/mySavedPosts.html">
               <span>저장한 글</span>
               0개
             </a>
@@ -297,7 +288,7 @@
           <div class="flex flex-col gap-2">
             <div class="grid grid-cols-2 gap-2">
               <a href="/user/myInfo" class="btn">정보수정</a>
-              <a href="/user/myPosts" class="btn">나의 활동</a>
+              <a href="/user/myPosts.html" class="btn">나의 활동</a>
             </div>
             <a href="/logout" class="btn">로그아웃</a>
           </div>

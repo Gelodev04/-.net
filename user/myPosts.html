@@ -4,8 +4,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <link rel="stylesheet" href="/style/globals.css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css"
@@ -15,7 +15,7 @@
   <body>
     <!-- HEADER -->
     <header
-      class="bg-white fixed lg:static w-full top-0 border-b border-gray-200"
+      class="bg-white z-10 fixed lg:static w-full top-0 border-b border-gray-200"
     >
       <nav class="h-[70px] lg:h-[100px] relative p-5 lg:px-[3.5rem]">
         <div class="flex items-center h-full">
@@ -32,7 +32,7 @@
           <!-- LOGO -->
           <a href="/">
             <img
-              src="upload/f005744ffbf444be997bc7624b102c90.webp"
+              src="../upload/f005744ffbf444be997bc7624b102c90.webp"
               alt="놀자넷"
               class="h-12 lg:w-[300px] lg:h-[71px] object-contain absolute translate-x-1/2 right-1/2 lg:static lg:translate-x-0 lg:right-auto translate-y-1/2 bottom-1/2 lg:translate-y-0 lg:bottom-0"
             />
@@ -134,7 +134,9 @@
         <div
           class="grid grid-cols-2 gap-3 whitespace-nowrap *:border *:rounded *:px-3 *:py-2 *:text-center text-[18px]"
         >
-          <a href="/user/myInfo.html" class="border-gray-200 border">정보수정</a>
+          <a href="/user/myInfo.html" class="border-gray-200 border"
+            >정보수정</a
+          >
           <a href="/user/myPoints.html" class="border-gray-200 border"
             >포인트 100점</a
           >
@@ -143,7 +145,9 @@
           </a>
           <a href="/user/myComments.html" class="border-gray-200 border">댓글 0개</a>
           <a href="/noteReceived.html" class="border-gray-200 border">쪽지 0개</a>
-          <a href="/user/myPosts.html" class="border-gray-200 border">나의 활동</a>
+          <a href="/user/myPosts.html" class="border-gray-200 border"
+            >나의 활동</a
+          >
           <a href="javascript:;" class="border-gray-200 border">
             푸시 알림 OFF
           </a>
@@ -204,7 +208,10 @@
         <i class="bi bi-heart-fill text-xl"></i>
         <span class="text-xs truncate">주문하기</span>
       </a>
-      <a href="/deposit.html" class="flex flex-col px-4 justify-center items-center">
+      <a
+        href="/deposit.html"
+        class="flex flex-col px-4 justify-center items-center"
+      >
         <i class="bi bi-database-add text-xl"></i>
         <span class="text-xs truncate">포인트충전</span>
       </a>
@@ -257,7 +264,7 @@
               <span>포인트</span>
               100점
             </a>
-            <a href="/user/myPosts.html.html">
+            <a href="/user/myPosts.html">
               <span>게시글</span>
               0개
             </a>
@@ -286,105 +293,76 @@
 
         <!-- IMAGE SECTION -->
         <div class="hidden lg:flex flex-col gap-5 mt-5">
-          <img src="upload/741949a8baf14a23bd2434bb7a2e2f1d.webp" alt="" />
-          <img src="upload/8700d966a5304e66bacc5ff451e0d8fa.webp" alt="" />
-          <img src="upload/cf21f0847b2448e5a480b406bb8461aa.webp" alt="" />
-          <img src="upload/8f48cad676174090bb1c52cd9c033f4d.webp" alt="" />
+          <img src="../upload/741949a8baf14a23bd2434bb7a2e2f1d.webp" alt="" />
+          <img src="../upload/8700d966a5304e66bacc5ff451e0d8fa.webp" alt="" />
+          <img src="../upload/cf21f0847b2448e5a480b406bb8461aa.webp" alt="" />
+          <img src="../upload/8f48cad676174090bb1c52cd9c033f4d.webp" alt="" />
         </div>
       </section>
       <!-- END OF PROFILE BOX -->
 
       <!-- RIGHT SECTION -->
-      <section class="lg:w-2/3">
+      <section class="lg:w-2/3 text-[18px]">
         <!-- FIRST BOX -->
-        <div class="title">
-          <h1 class="text-xl font-bold">입금</h1>
-        </div>
-        <!-- SECOND BOX -->
-        <div class="box text-[18px] mt-5">
-          <p class="whitespace-pre-wrap">
-            [입금방법] 아래 계좌로 입금 후 -&gt; 동일금액 입금신청 (5분 내로
-            입금체크 됩니다) 카카오뱅크 3333-09-8944151 백동진 10만원 이상 충전
-            시 10% 보너스 충전 30만원 이상 충전 시 20% 보너스 충전 100만원 이상
-            충전 시 30% 보너스 충전 * 포인트 충전 이후 환불은 불가능하니
-            신중하게 결정해주세요.
-          </p>
+        <div class="box !p-0">
           <div
-            class="grid grid-cols-2 gap-1 items-center max-w-[35rem] odd:*:break-keep odd:*:whitespace-nowrap"
+            class="px-2 grid grid-cols-2 md:grid-cols-5 text-center divide-x divide-gray-200"
           >
-            <span>입금 신청 금액 (10000원 이상)</span>
-            <input
-              type="text"
-              class="w"
-              placeholder="숫자만 입력해주세요"
-              form="_edac6cf3635b4fdd98096d1a007a54af"
-              name="pointAmount"
-              value="0"
-            />
-
-            <span>입금자명</span>
-            <input
-              type="text"
-              class="w"
-              x-model="accountHolder"
-              form="_edac6cf3635b4fdd98096d1a007a54af"
-              name="accountHolder"
-              value=""
-            />
-
-            <button
-              class="btn col-span-2"
-              form="_edac6cf3635b4fdd98096d1a007a54af"
+            <a
+              href="/user/myPosts.html"
+              class="px-2 py-3 relative font-bold text-fgAccent-500"
             >
-              신청
-            </button>
+              나의 게시글
+              <span
+                aria-hidden="true"
+                class="absolute inset-x-0 bottom-0 h-0.5 bg-fgAccent-500"
+              ></span>
+            </a>
+            <a href="/mySavedPosts.html" class="px-2 py-3 relative"> 저장한 글 </a>
+            <a href="/user/myComments.html" class="px-2 py-3 relative">
+              나의 댓글
+            </a>
+            <a href="/user/myPoints.html" class="px-2 py-3 relative">
+              나의 포인트
+            </a>
+            <a href="/user/myBlocks.html" class="px-2 py-3 relative">
+              나의 차단 유저
+            </a>
           </div>
         </div>
-        <!-- END OF SECOND BOX -->
-        <!-- THIRD BOX -->
-        <div class="box min-h-96 mt-5 text-[18px]">
-          <div class="sm:flex sm:items-center">
-            <div class="sm:flex-auto">
-              <h1 class="text-base font-semibold leading-6">입금 내역</h1>
-            </div>
-          </div>
-          <div class="mt-2 px-6 flow-root">
-            <div class="-mx-4 -my-2 overflow-x-auto sm:-mx-6 lg:-mx-8">
-              <div class="inline-block min-w-full py-2 align-middle">
-                <table class="min-w-full divide-y divide-gray-200">
-                  <thead>
-                    <tr>
-                      <th scope="col" class="px-3 py-2 text-left font-semibold">
-                        등록시각
-                      </th>
-                      <th scope="col" class="px-3 py-2 text-left font-semibold">
-                        닉네임
-                      </th>
-                      <th scope="col" class="px-3 py-2 text-left font-semibold">
-                        금액
-                      </th>
-                      <th scope="col" class="px-3 py-2 text-left font-semibold">
-                        상세
-                      </th>
-                    </tr>
-                  </thead>
-                  <tbody class="divide-y divide-gray-200 text-xs"></tbody>
-                </table>
-              </div>
-            </div>
-          </div>
+        <!-- END OF FIRST BOX -->
+        <!-- TITLE -->
+        <div class="title mt-5 ">
+          <h1 class="text-xl font-bold">나의 게시글 1페이지</h1>
         </div>
-        <!-- END OF THIRD BOX -->
+        <!-- LAST BOX -->
+         <div class="box flex flex-col divide-y mt-5">
+        </div>
+
+        <!-- PAGINATION -->
+         <div
+          class="pagination text-[18px] bg-white mt-6 border border-gray-200 rounded-[0.5rem]"
+        >
+          <a href="?page=1" class="!px-2">
+            <i class="bi bi-chevron-left"></i>
+          </a>
+          <div class="flex divide-x divide-gray-200" id="pagination">
+            <a href="?page=1" data-page="1" class="px-[13px] py-2">1</a>
+          </div>
+          <a href="?page=2" class="!px-2">
+            <i class="bi bi-chevron-right"></i>
+          </a>
+        </div>
+
       </section>
 
-      <!-- IMAGE SECTION -->
       <section class="mt-10 lg:hidden">
         <!-- IMAGE SECTION -->
         <div class="flex flex-col gap-5">
-          <img src="upload/741949a8baf14a23bd2434bb7a2e2f1d.webp" alt="" />
-          <img src="upload/8700d966a5304e66bacc5ff451e0d8fa.webp" alt="" />
-          <img src="upload/cf21f0847b2448e5a480b406bb8461aa.webp" alt="" />
-          <img src="upload/8f48cad676174090bb1c52cd9c033f4d.webp" alt="" />
+          <img src="../upload/741949a8baf14a23bd2434bb7a2e2f1d.webp" alt="" />
+          <img src="../upload/8700d966a5304e66bacc5ff451e0d8fa.webp" alt="" />
+          <img src="../upload/cf21f0847b2448e5a480b406bb8461aa.webp" alt="" />
+          <img src="../upload/8f48cad676174090bb1c52cd9c033f4d.webp" alt="" />
         </div>
       </section>
     </main>
