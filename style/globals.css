@@ -30,11 +30,31 @@ body{
     transition-duration: 75ms;
 }
 
+.nav-links li a:hover {
+    color: #db323f;
+}
+
 .btn:hover{
     background-color: #dfdfdf;
 }
 
 .btn:active{
+    background-color: #dfdfdf;
+}
+
+.btn-accent:hover{
+    background-color: #dfdfdf;
+}
+
+.btn-accent-lg:hover{
+    background-color: #dfdfdf;
+}
+
+.btn-accent:active{
+    background-color: #dfdfdf;
+}
+
+.btn-accent-lg:active{
     background-color: #dfdfdf;
 }
 
