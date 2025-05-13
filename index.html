@@ -11,13 +11,12 @@
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css"
     />
   </head>
-
   <body>
     <!-- HEADER -->
     <header
       class="bg-white fixed lg:static w-full top-0 border-b border-gray-200"
     >
-      <nav class="h-[70px] lg:h-[100px] relative p-5 lg:px-[3.5rem] ">
+      <nav class="h-[70px] lg:h-[100px] relative p-5 lg:px-[3.5rem]">
         <div class="flex justify-center items-center h-full">
           <div class="flex items-center justify-between w-full lg:hidden">
             <!-- MENUICON -->
@@ -37,7 +36,6 @@
               class="h-12 lg:w-[300px] lg:h-[71px] object-contain absolute translate-x-1/2 right-1/2 lg:static lg:translate-x-0 lg:right-auto translate-y-1/2 bottom-1/2 lg:translate-y-0 lg:bottom-0"
             />
           </a>
-
           <!-- DESKTOP MENUS -->
           <ul
             class="grow justify-center items-center gap-5 text-lg hidden lg:flex nav-links"
@@ -98,7 +96,7 @@
     <!-- SEARCH BAR  -->
     <div
       id="searchContainer"
-      class="w-full bg-white border-b border-gray-200 px-5 py-3 hidden fixed  z-10 top-[70px] lg:top-[100px]"
+      class="w-full bg-white border-b border-gray-200 px-5 py-3 hidden fixed z-10 top-[70px] lg:top-[100px]"
     >
       <form class="flex items-center gap-2">
         <input
@@ -120,14 +118,13 @@
           ×
         </button>
         <div class="flex justify-between items-center">
-                <div class="flex flex-col gap-2 w-full">
-                    <div class="flex justify-between items-center">
-                        <a href="/login.html" class="btn">로그인</a>
-                            <a href="/join.html" class="btn">회원가입</a>
-                    </div>
-                    <div class="flex justify-center gap-2 items-center">
-                    </div>
-                </div>
+          <div class="flex flex-col gap-2 w-full">
+            <div class="flex justify-between items-center">
+              <a href="/login.html" class="btn">로그인</a>
+              <a href="/join.html" class="btn">회원가입</a>
+            </div>
+            <div class="flex justify-center gap-2 items-center"></div>
+          </div>
         </div>
         <div
           class="grid grid-cols-2 gap-3 whitespace-nowrap *:border *:rounded *:px-3 *:py-2 *:text-center text-[18px]"
@@ -175,7 +172,7 @@
               커스텀 댓글주문
             </a>
           </li>
-          <li x>
+          <li>
             <a
               href="/posts/automaticOrder.html"
               class="p-3 flex justify-between"
@@ -201,7 +198,6 @@
         </ul>
       </div>
     </dialog>
-
     <!-- BOTTOM BAR -->
     <div
       class="lg:hidden fixed w-full h-24 pb-6 bottom-0 grid grid-cols-3 justify-center items-center border-solid border-t border-gray-200 bg-white"
@@ -228,7 +224,6 @@
         <span class="text-xs truncate">댓글주문</span>
       </a>
     </div>
-
     <!-- CONTENT -->
     <main class="px-3 mt-[5.5rem] lg:mt-5 lg:flex gap-5 w-full justify-center">
       <section class="w-1/4">
@@ -243,13 +238,18 @@
               form="login"
             />
             <input
-              class=" bg-white py-3 px-2 rounded-[0.5rem] border border-gray-200"
+              class="bg-white py-3 px-2 rounded-[0.5rem] border border-gray-200"
               type="password"
               name="password"
               placeholder="비밀번호"
               form="login"
             />
-            <button class="btn-accent-lg bg-white py-3 px-2 rounded-[0.5rem]" form="login">로그인</button>
+            <button
+              class="btn-accent-lg bg-white py-3 px-2 rounded-[0.5rem]"
+              form="login"
+            >
+              로그인
+            </button>
           </div>
           <div class="flex justify-between text-xs text-gray-400">
             <a href="/user/findPassword.html">비밀번호 찾기</a>
@@ -352,7 +352,6 @@
               >
             </li>
           </ul>
-
           <p class="mt-7">
             <span
               style="
@@ -379,7 +378,6 @@
         </div>
         <!-- END OF FIRST BLOCK -->
       </section>
-
       <!-- SECOND SECTION -->
       <section class="mt-10 lg:hidden">
         <!-- IMAGE SECTION -->
@@ -391,7 +389,6 @@
         </div>
       </section>
     </main>
-
     <!-- FOOTER -->
     <footer
       class="mt-[5rem] flex flex-col justify-center items-center gap-2 mb-[10rem] lg:mb-[3rem] text-[rgb(128,128,128)] text-[18px]"
@@ -407,7 +404,6 @@
         <a href="/">© 2025 놀자넷</a>
       </div>
     </footer>
-
     <script src="/js/main.js"></script>
   </body>
 </html>
