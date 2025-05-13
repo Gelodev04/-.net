@@ -12,6 +12,11 @@ input::placeholder {
   color: #bebcbc; /* Change this to your desired color */
 }
 
+input:focus {
+  outline: none;
+}
+
+
 
 .btn {
     cursor: pointer;

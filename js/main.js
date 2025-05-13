@@ -298,7 +298,15 @@ const editorConfig = {
 
 configUpdateAlert(editorConfig);
 
-ClassicEditor.create(document.querySelector('#editor'), editorConfig);
+ClassicEditor.create(document.querySelector('#editor'), editorConfig)
+.then(editor => {
+    editor.editing.view.change(writer => {
+      writer.setStyle('min-height', '400px', editor.editing.view.document.getRoot());
+    });
+  })
+  .catch(error => {
+    console.error(error);
+  });
 
 /**
  * This function exists to remind you to update the config needed for premium features.
