@@ -4,8 +4,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <link rel="stylesheet" href="/style/globals.css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css"
@@ -15,7 +15,7 @@
   <body>
     <!-- HEADER -->
     <header
-      class="bg-white fixed lg:static w-full top-0 border-b border-gray-200"
+      class="bg-white z-10 fixed lg:static w-full top-0 border-b border-gray-200"
     >
       <nav class="h-[70px] lg:h-[100px] relative p-5 lg:px-[3.5rem]">
         <div class="flex items-center h-full">
@@ -41,7 +41,7 @@
           <!-- LOGO -->
           <a href="/">
             <img
-              src="upload/f005744ffbf444be997bc7624b102c90.webp"
+              src="../upload/f005744ffbf444be997bc7624b102c90.webp"
               alt="놀자넷"
               class="h-12 lg:w-[300px] lg:h-[71px] object-contain absolute translate-x-1/2 right-1/2 lg:static lg:translate-x-0 lg:right-auto translate-y-1/2 bottom-1/2 lg:translate-y-0 lg:bottom-0"
             />
@@ -213,7 +213,10 @@
         <i class="bi bi-heart-fill text-xl"></i>
         <span class="text-xs truncate">주문하기</span>
       </a>
-      <a href="/deposit.html" class="flex flex-col px-4 justify-center items-center">
+      <a
+        href="/deposit.html"
+        class="flex flex-col px-4 justify-center items-center"
+      >
         <i class="bi bi-database-add text-xl"></i>
         <span class="text-xs truncate">포인트충전</span>
       </a>
@@ -295,10 +298,10 @@
 
         <!-- IMAGE SECTION -->
         <div class="hidden lg:flex flex-col gap-5 mt-5">
-          <img src="upload/741949a8baf14a23bd2434bb7a2e2f1d.webp" alt="" />
-          <img src="upload/8700d966a5304e66bacc5ff451e0d8fa.webp" alt="" />
-          <img src="upload/cf21f0847b2448e5a480b406bb8461aa.webp" alt="" />
-          <img src="upload/8f48cad676174090bb1c52cd9c033f4d.webp" alt="" />
+          <img src="../upload/741949a8baf14a23bd2434bb7a2e2f1d.webp" alt="" />
+          <img src="../upload/8700d966a5304e66bacc5ff451e0d8fa.webp" alt="" />
+          <img src="../upload/cf21f0847b2448e5a480b406bb8461aa.webp" alt="" />
+          <img src="../upload/8f48cad676174090bb1c52cd9c033f4d.webp" alt="" />
         </div>
       </section>
       <!-- END OF PROFILE BOX -->
@@ -307,264 +310,106 @@
       <section class="lg:w-2/3">
         <!-- FIRST BOX -->
         <div class="title">
-          <h1 class="text-xl font-bold">댓글 작업 신청</h1>
+          <h1 class="text-xl font-bold">자동주문</h1>
         </div>
-        <!-- SECOND BOX -->
-        <div class="box mt-5 text-[18px] p-[20px]">
-          <span>키워드</span>
-          <input
-            class="w"
-            form="_e0da3dff15bd45be85ac541c5a2d2d3f"
-            name="keyword"
-            value=""
-            type="text"
-          />
-          <br />
-          <br />
-          <span>URL</span>
-          <input
-            class="w w-96"
-            form="_e0da3dff15bd45be85ac541c5a2d2d3f"
-            name="url"
-            value=""
-            type="text"
-          />
-          <br />
-          <div class="overflow-x-auto">
-            <table class="min-w-full divide-y divide-gray-300">
-              <thead>
-                <tr>
-                  <th
-                    scope="col"
-                    class="whitespace-nowrap py-3.5 pl-4 pr-3 text-left text-sm font-semibold text-gray-900 sm:pl-0"
-                  >
-                    댓글
-                  </th>
-                  <th
-                    scope="col"
-                    class="whitespace-nowrap px-2 py-3.5 text-left text-sm font-semibold text-gray-900"
-                  >
-                    포인트
-                  </th>
-                </tr>
-              </thead>
-              <tbody class="divide-y divide-gray-200 bg-white">
-                <tr>
-                  <td
-                    class="whitespace-nowrap py-2 pl-4 pr-3 text-sm text-gray-500 sm:pl-0"
-                  >
-                    <input
-                      class="w w-full"
-                      form="_e0da3dff15bd45be85ac541c5a2d2d3f"
-                      name="comments"
-                      type="text"
-                    />
-                  </td>
-                  <td class="whitespace-nowrap px-2 py-2 text-sm text-gray-500">
-                    <input type="text" readonly="" placeholder="0" />
-                  </td>
-                </tr>
-                <tr>
-                  <td
-                    class="whitespace-nowrap py-2 pl-4 pr-3 text-sm text-gray-500 sm:pl-0"
-                  >
-                    <input
-                      class="w w-full"
-                      form="_e0da3dff15bd45be85ac541c5a2d2d3f"
-                      name="comments"
-                      type="text"
-                    />
-                  </td>
-                  <td class="whitespace-nowrap px-2 py-2 text-sm text-gray-500">
-                    <input type="text" readonly="" placeholder="0" />
-                  </td>
-                </tr>
-                <tr>
-                  <td
-                    class="whitespace-nowrap py-2 pl-4 pr-3 text-sm text-gray-500 sm:pl-0"
-                  >
-                    <input
-                      class="w w-full"
-                      form="_e0da3dff15bd45be85ac541c5a2d2d3f"
-                      name="comments"
-                      type="text"
-                    />
-                  </td>
-                  <td class="whitespace-nowrap px-2 py-2 text-sm text-gray-500">
-                    <input type="text" readonly="" placeholder="0" />
-                  </td>
-                </tr>
-                <tr>
-                  <td
-                    class="whitespace-nowrap py-2 pl-4 pr-3 text-sm text-gray-500 sm:pl-0"
-                  >
-                    <input
-                      class="w w-full"
-                      x-model="a"
-                      form="_e0da3dff15bd45be85ac541c5a2d2d3f"
-                      name="comments"
-                      type="text"
-                    />
-                  </td>
-                  <td class="whitespace-nowrap px-2 py-2 text-sm text-gray-500">
-                    <input type="text" readonly="" placeholder="0" />
-                  </td>
-                </tr>
-                <tr>
-                  <td
-                    class="whitespace-nowrap py-2 pl-4 pr-3 text-sm text-gray-500 sm:pl-0"
-                  >
-                    <input
-                      class="w w-full"
-                      form="_e0da3dff15bd45be85ac541c5a2d2d3f"
-                      name="comments"
-                      type="text"
-                    />
-                  </td>
-                  <td class="whitespace-nowrap px-2 py-2 text-sm text-gray-500">
-                    <input type="text" readonly="" placeholder="0" />
-                  </td>
-                </tr>
-                <tr>
-                  <td
-                    class="whitespace-nowrap py-2 pl-4 pr-3 text-sm text-gray-500 sm:pl-0"
-                  >
-                    <input
-                      class="w w-full"
-                      form="_e0da3dff15bd45be85ac541c5a2d2d3f"
-                      name="comments"
-                      type="text"
-                    />
-                  </td>
-                  <td class="whitespace-nowrap px-2 py-2 text-sm text-gray-500">
-                    <input type="text" readonly="" placeholder="0" />
-                  </td>
-                </tr>
-                <tr>
-                  <td
-                    class="whitespace-nowrap py-2 pl-4 pr-3 text-sm text-gray-500 sm:pl-0"
-                  >
-                    <input
-                      class="w w-full"
-                      form="_e0da3dff15bd45be85ac541c5a2d2d3f"
-                      name="comments"
-                      type="text"
-                    />
-                  </td>
-                  <td class="whitespace-nowrap px-2 py-2 text-sm text-gray-500">
-                    <input type="text" readonly="" placeholder="0" />
-                  </td>
-                </tr>
-                <tr>
-                  <td
-                    class="whitespace-nowrap py-2 pl-4 pr-3 text-sm text-gray-500 sm:pl-0"
-                  >
-                    <input
-                      class="w w-full"
-                      form="_e0da3dff15bd45be85ac541c5a2d2d3f"
-                      name="comments"
-                      type="text"
-                    />
-                  </td>
-                  <td class="whitespace-nowrap px-2 py-2 text-sm text-gray-500">
-                    <input type="text" readonly="" placeholder="0" />
-                  </td>
-                </tr>
-                <tr>
-                  <td
-                    class="whitespace-nowrap py-2 pl-4 pr-3 text-sm text-gray-500 sm:pl-0"
-                  >
-                    <input
-                      class="w w-full"
-                      form="_e0da3dff15bd45be85ac541c5a2d2d3f"
-                      name="comments"
-                      type="text"
-                    />
-                  </td>
-                  <td class="whitespace-nowrap px-2 py-2 text-sm text-gray-500">
-                    <input type="text" readonly="" placeholder="0" />
-                  </td>
-                </tr>
-                <tr>
-                  <td
-                    class="whitespace-nowrap py-2 pl-4 pr-3 text-sm text-gray-500 sm:pl-0"
-                  >
-                    <input
-                      class="w w-full"
-                      form="_e0da3dff15bd45be85ac541c5a2d2d3f"
-                      name="comments"
-                      type="text"
-                    />
-                  </td>
-                  <td class="whitespace-nowrap px-2 py-2 text-sm text-gray-500">
-                    <input type="text" readonly="" placeholder="0" />
-                  </td>
-                </tr>
-              </tbody>
-            </table>
-            <button
-              class="mt-4 btn px-8 w-full border"
-              form="_e0da3dff15bd45be85ac541c5a2d2d3f"
-            >
-              작업신청
-            </button>
-          </div>
-        </div>
-        <!-- END OF SECOND BOX -->
-        <div class="box min-h-96 mt-5 text-[18px]">
-          <div class="sm:flex sm:items-center">
-            <div class="sm:flex-auto">
-              <h1 class="text-base font-semibold leading-6">작업 내역</h1>
-            </div>
-          </div>
-          <div class="mt-2 px-6 flow-root">
-            <div class="-mx-4 -my-2 overflow-x-auto sm:-mx-6 lg:-mx-8">
-              <div class="inline-block min-w-full py-2 align-middle">
-                <table class="min-w-full divide-y divide-gray-200">
-                  <thead>
-                    <tr>
-                      <th scope="col" class="px-3 py-2 text-left font-semibold">
-                        등록시각
-                      </th>
-                      <th scope="col" class="px-3 py-2 text-left font-semibold">
-                        키워드
-                      </th>
-                      <th scope="col" class="px-3 py-2 text-left font-semibold">
-                        URL
-                      </th>
-                      <th scope="col" class="px-3 py-2 text-left font-semibold">
-                        공감
-                      </th>
-                      <th scope="col" class="px-3 py-2 text-left font-semibold">
-                        댓글
-                      </th>
-                      <th scope="col" class="px-3 py-2 text-left font-semibold">
-                        스크랩
-                      </th>
-                      <th scope="col" class="px-3 py-2 text-left font-semibold">
-                        포인트
-                      </th>
-                      <th scope="col" class="px-3 py-2 text-left font-semibold">
-                        현황
-                      </th>
-                    </tr>
-                  </thead>
-                  <tbody class="divide-y divide-gray-200 text-xs"></tbody>
-                </table>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
 
-      <!-- IMAGE SECTION -->
-      <section class="mt-10 lg:hidden">
-        <!-- IMAGE SECTION -->
-        <div class="flex flex-col gap-5">
-          <img src="upload/741949a8baf14a23bd2434bb7a2e2f1d.webp" alt="" />
-          <img src="upload/8700d966a5304e66bacc5ff451e0d8fa.webp" alt="" />
-          <img src="upload/cf21f0847b2448e5a480b406bb8461aa.webp" alt="" />
-          <img src="upload/8f48cad676174090bb1c52cd9c033f4d.webp" alt="" />
+        <!-- FORM  -->
+        <div class="box text-[18px] mt-5" >
+          <div
+            class="grid grid-cols-[auto_1fr] items-center gap-x-10 gap-y-2.5 max-w-96"
+          >
+            <span>아이디</span>
+            <span>storygod</span>
+
+            <span>이메일</span>
+            <span>storytellor@gmail.com</span>
+
+            <span>비밀번호</span>
+            <input
+              placeholder="변경하실 때만 입력해주세요"
+              class="w w-full"
+              form="_cb180c8e9bf24ec6b29a0336f5c93891"
+              name="password"
+              value=""
+              type="text"
+            />
+            <span>비밀번호 확인</span>
+            <input
+              placeholder="변경하실 때만 입력해주세요"
+              class="w w-full"
+              form="_cb180c8e9bf24ec6b29a0336f5c93891"
+              name="password2"
+              value=""
+              type="text"
+            />
+
+            <span>닉네임</span>
+            <input
+              class="w w-full"
+              form="_cb180c8e9bf24ec6b29a0336f5c93891"
+              name="Name"
+              value="storygod"
+              type="text"
+            />
+
+            <span></span>
+            <div class="flex flex-col gap-2">
+              <button class="btn" x-on:click="checkNameDup()">중복 검사</button>
+              <span
+                x-show="$store.isNameDup === false"
+                class="text-green-500"
+                style="display: none"
+                >사용할 수 있는 닉네임입니다</span
+              >
+              <span
+                x-show="$store.isNameDup === true"
+                class="text-red-500"
+                style="display: none"
+                >사용할 수 없는 닉네임입니다</span
+              >
+            </div>
+
+            <span>가입경로(어디보고 가입하셨나요?)(필수)</span>
+            <input
+              class="w w-full"
+              value="구글"
+              form="_cb180c8e9bf24ec6b29a0336f5c93891"
+              name="customFieldValues"
+              type="text"
+            />
+            <span
+              >예시
+              :오픈채팅/셀클럽/구글검색/지인소개/카페초대/아이보스/기타</span
+            >
+            <input
+              class="w w-full"
+              value=""
+              form="_cb180c8e9bf24ec6b29a0336f5c93891"
+              name="customFieldValues"
+              type="text"
+            />
+
+            <span>마지막 수정</span>
+            <span>2025.05.12 14:21:49</span>
+
+            <span>푸시 알림</span>
+            <a href="/unregisterPwaPush">
+              <button class="btn">모든 기기 푸시 끄기</button>
+            </a>
+          </div>
+
+          <button class="btn mt-5" form="_cb180c8e9bf24ec6b29a0336f5c93891">
+            저장
+          </button>
+
+          <hr class="w-full max-w-96 my-5" />
+          <button
+            class="btn"
+            onsubmit="return confirm('정말 탈퇴하시겠습니까?')"
+            form="_a1576190d3a342419f6edeca13edd4b0"
+          >
+            탈퇴하기
+          </button>
         </div>
       </section>
     </main>
